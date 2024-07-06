@@ -11,6 +11,6 @@ main_keyboard = ReplyKeyboardMarkup(keyboard=[
 ], resize_keyboard=True)
 
 
-button_one = InlineKeyboardMarkup(inline_keyboard=[
+map_button = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='Ссылка', url='https://yandex.ru/maps/?text=улица Ленина, 1, Зеленоград, Москва')]
 ])
