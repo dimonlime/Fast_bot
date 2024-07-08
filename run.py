@@ -11,6 +11,7 @@ from handlers.main_handler import router
 dp = Dispatcher()
 
 
+# Загрузка окружения и роутеров + подключения бота к токену
 async def main():
     dp.include_router(router)
     dotenv.load_dotenv()
@@ -18,6 +19,7 @@ async def main():
     await dp.start_polling(bot)
 
 
+# Запуск бота + логгирование
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     try:
